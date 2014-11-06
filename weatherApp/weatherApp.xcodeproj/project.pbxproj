@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		410E672C1A0BA56E00BFE95F /* ZHMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 410E672B1A0BA56E00BFE95F /* ZHMainView.xib */; };
+		410E672F1A0BA6D100BFE95F /* ZHMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 410E672E1A0BA6D100BFE95F /* ZHMainView.m */; };
 		4192E5C91A0B099600CF3253 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4192E5C81A0B099600CF3253 /* main.m */; };
 		4192E5CC1A0B099600CF3253 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4192E5CB1A0B099600CF3253 /* AppDelegate.m */; };
 		4192E5CF1A0B099600CF3253 /* weatherApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4192E5CD1A0B099600CF3253 /* weatherApp.xcdatamodeld */; };
@@ -29,6 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		410E672B1A0BA56E00BFE95F /* ZHMainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZHMainView.xib; sourceTree = "<group>"; };
+		410E672D1A0BA6D100BFE95F /* ZHMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHMainView.h; sourceTree = "<group>"; };
+		410E672E1A0BA6D100BFE95F /* ZHMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHMainView.m; sourceTree = "<group>"; };
 		4192E5C31A0B099600CF3253 /* weatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4192E5C71A0B099600CF3253 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4192E5C81A0B099600CF3253 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -92,6 +97,9 @@
 				4192E5D11A0B099600CF3253 /* ViewController.m */,
 				4192E5EF1A0B262500CF3253 /* ZHWeatherViewController.h */,
 				4192E5F01A0B262500CF3253 /* ZHWeatherViewController.m */,
+				410E672B1A0BA56E00BFE95F /* ZHMainView.xib */,
+				410E672D1A0BA6D100BFE95F /* ZHMainView.h */,
+				410E672E1A0BA6D100BFE95F /* ZHMainView.m */,
 				4192E5D31A0B099600CF3253 /* Main.storyboard */,
 				4192E5D61A0B099600CF3253 /* Images.xcassets */,
 				4192E5D81A0B099600CF3253 /* LaunchScreen.xib */,
@@ -208,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4192E5D51A0B099600CF3253 /* Main.storyboard in Resources */,
+				410E672C1A0BA56E00BFE95F /* ZHMainView.xib in Resources */,
 				4192E5DA1A0B099600CF3253 /* LaunchScreen.xib in Resources */,
 				4192E5D71A0B099600CF3253 /* Images.xcassets in Resources */,
 			);
@@ -232,6 +241,7 @@
 				4192E5D21A0B099600CF3253 /* ViewController.m in Sources */,
 				4192E5C91A0B099600CF3253 /* main.m in Sources */,
 				4192E5F11A0B262500CF3253 /* ZHWeatherViewController.m in Sources */,
+				410E672F1A0BA6D100BFE95F /* ZHMainView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +432,7 @@
 				4192E5EB1A0B099600CF3253 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4192E5EC1A0B099600CF3253 /* Build configuration list for PBXNativeTarget "weatherAppTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +441,7 @@
 				4192E5EE1A0B099600CF3253 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
