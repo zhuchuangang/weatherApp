@@ -15,6 +15,7 @@
 		4192E5D71A0B099600CF3253 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4192E5D61A0B099600CF3253 /* Images.xcassets */; };
 		4192E5DA1A0B099600CF3253 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4192E5D81A0B099600CF3253 /* LaunchScreen.xib */; };
 		4192E5E61A0B099600CF3253 /* weatherAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4192E5E51A0B099600CF3253 /* weatherAppTests.m */; };
+		4192E5F11A0B262500CF3253 /* ZHWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4192E5F01A0B262500CF3253 /* ZHWeatherViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		4192E5DF1A0B099600CF3253 /* weatherAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = weatherAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4192E5E41A0B099600CF3253 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4192E5E51A0B099600CF3253 /* weatherAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = weatherAppTests.m; sourceTree = "<group>"; };
+		4192E5EF1A0B262500CF3253 /* ZHWeatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHWeatherViewController.h; sourceTree = "<group>"; };
+		4192E5F01A0B262500CF3253 /* ZHWeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHWeatherViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,8 @@
 				4192E5CB1A0B099600CF3253 /* AppDelegate.m */,
 				4192E5D01A0B099600CF3253 /* ViewController.h */,
 				4192E5D11A0B099600CF3253 /* ViewController.m */,
+				4192E5EF1A0B262500CF3253 /* ZHWeatherViewController.h */,
+				4192E5F01A0B262500CF3253 /* ZHWeatherViewController.m */,
 				4192E5D31A0B099600CF3253 /* Main.storyboard */,
 				4192E5D61A0B099600CF3253 /* Images.xcassets */,
 				4192E5D81A0B099600CF3253 /* LaunchScreen.xib */,
@@ -226,6 +231,7 @@
 				4192E5CF1A0B099600CF3253 /* weatherApp.xcdatamodeld in Sources */,
 				4192E5D21A0B099600CF3253 /* ViewController.m in Sources */,
 				4192E5C91A0B099600CF3253 /* main.m in Sources */,
+				4192E5F11A0B262500CF3253 /* ZHWeatherViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
