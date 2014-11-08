@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wDm-i2-VVl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wDm-i2-VVl">
     <dependencies>
         <deployment version="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
@@ -26,6 +26,7 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZTv-zn-B9s" id="oXb-If-oMD">
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <color key="tintColor" red="1" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <segue destination="bAb-fk-arl" kind="show" id="Icm-S6-vo4"/>
                                         </connections>
@@ -37,7 +38,7 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="w6T-KE-r5e" secondAttribute="trailing" id="0Jg-H7-deV"/>
                             <constraint firstAttribute="bottom" secondItem="w6T-KE-r5e" secondAttribute="bottom" id="2yO-jG-Ndr"/>
-                            <constraint firstItem="w6T-KE-r5e" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="20" id="u6E-s5-KgE"/>
+                            <constraint firstItem="w6T-KE-r5e" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="u6E-s5-KgE"/>
                             <constraint firstItem="w6T-KE-r5e" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="x2G-Pc-aXb"/>
                         </constraints>
                         <variation key="default">
@@ -99,7 +100,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="MEH-PQ-ioG" firstAttribute="top" secondItem="U8m-B3-Z22" secondAttribute="top" constant="20" id="HHi-4V-f91"/>
+                            <constraint firstItem="MEH-PQ-ioG" firstAttribute="top" secondItem="U8m-B3-Z22" secondAttribute="top" id="HHi-4V-f91"/>
                             <constraint firstAttribute="centerX" secondItem="gL4-gC-dHw" secondAttribute="centerX" id="U9n-l3-Vnf"/>
                             <constraint firstAttribute="bottom" secondItem="MEH-PQ-ioG" secondAttribute="bottom" constant="40" id="UlU-eY-qBo"/>
                             <constraint firstAttribute="trailing" secondItem="MEH-PQ-ioG" secondAttribute="trailing" id="cWi-ai-lkO"/>
@@ -112,12 +113,12 @@
                                 <exclude reference="MEH-PQ-ioG"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="U9n-l3-Vnf"/>
+                                <exclude reference="pVv-n4-zuf"/>
                                 <exclude reference="HHi-4V-f91"/>
                                 <exclude reference="UlU-eY-qBo"/>
                                 <exclude reference="cWi-ai-lkO"/>
                                 <exclude reference="kCg-hq-ubp"/>
-                                <exclude reference="U9n-l3-Vnf"/>
-                                <exclude reference="pVv-n4-zuf"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -126,12 +127,12 @@
                                 <include reference="MEH-PQ-ioG"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="U9n-l3-Vnf"/>
+                                <include reference="pVv-n4-zuf"/>
                                 <include reference="HHi-4V-f91"/>
                                 <include reference="UlU-eY-qBo"/>
                                 <include reference="cWi-ai-lkO"/>
                                 <include reference="kCg-hq-ubp"/>
-                                <include reference="U9n-l3-Vnf"/>
-                                <include reference="pVv-n4-zuf"/>
                             </mask>
                         </variation>
                     </view>

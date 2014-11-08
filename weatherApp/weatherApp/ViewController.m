@@ -22,6 +22,17 @@
     citys=[[NSArray alloc] initWithObjects:@"芜湖",@"南京",@"上海", nil];
     _cityTableView.delegate=self;
     _cityTableView.dataSource=self;
+    CGFloat R  = (CGFloat) 230/255.0;
+    CGFloat G = (CGFloat) 67/255.0;
+    CGFloat B = (CGFloat) 31/255.0;
+    CGFloat alpha = (CGFloat) 1.0;
+    
+    UIColor *colorRGB = [UIColor colorWithRed: R
+                                        green: G
+                                         blue: B
+                                        alpha: alpha
+                         ];
+    [_cityTableView setBackgroundColor:colorRGB];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -41,8 +52,22 @@
 //    if (cell!=nil) {
 //        cell=[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CELL_ID];
 //    }
+    UIColor *colorRGB = [UIColor colorWithRed: 230/255.0
+                                        green: 67/255.0
+                                         blue: 31/255.0
+                                        alpha: 1.0
+                         ];
+    [cell setBackgroundColor:colorRGB];
+    
     NSInteger row=indexPath.row;
     cell.textLabel.text=[citys objectAtIndex:row];
+    cell.textLabel.font=[UIFont fontWithName:@"System" size:12];
+    UIColor *textColor = [UIColor colorWithRed: 255.0/255.0
+                                        green: 255.0/255.0
+                                         blue: 255.0/255.0
+                                        alpha: 1.0
+                         ];
+    [cell.textLabel setTextColor:textColor];
     return cell;
 }
 
