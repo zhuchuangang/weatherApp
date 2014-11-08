@@ -10,6 +10,9 @@
 
 @implementation ZHMainView
 
+@synthesize cityLabel;
+@synthesize weatherLabel;
+@synthesize tempLabel;
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
@@ -18,6 +21,10 @@
 }
 */
 
-
++(ZHMainView *)instanceView
+{
+    NSArray* nibView =  [[NSBundle mainBundle] loadNibNamed:@"ZHMainView" owner:nil options:nil];
+    return [nibView objectAtIndex:0];
+}
 
 @end

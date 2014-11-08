@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wDm-i2-VVl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wDm-i2-VVl">
     <dependencies>
         <deployment version="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
@@ -72,10 +72,10 @@
             </objects>
             <point key="canvasLocation" x="927" y="136"/>
         </scene>
-        <!--View Controller-->
+        <!--Weather View Controller-->
         <scene sceneID="Yg2-Fg-4bY">
             <objects>
-                <viewController id="bAb-fk-arl" sceneMemberID="viewController">
+                <viewController id="bAb-fk-arl" customClass="ZHWeatherViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rKS-ue-6Om"/>
                         <viewControllerLayoutGuide type="bottom" id="OMF-ft-qyG"/>
@@ -88,19 +88,34 @@
                                 <rect key="frame" x="-19" y="-18" width="39" height="37"/>
                                 <color key="pageIndicatorTintColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="currentPageIndicatorTintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="valueChanged:" destination="bAb-fk-arl" eventType="valueChanged" id="CDA-A3-AbO"/>
+                                </connections>
                             </pageControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MEH-PQ-ioG">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="MEH-PQ-ioG" firstAttribute="top" secondItem="U8m-B3-Z22" secondAttribute="top" constant="20" id="HHi-4V-f91"/>
                             <constraint firstAttribute="centerX" secondItem="gL4-gC-dHw" secondAttribute="centerX" id="U9n-l3-Vnf"/>
+                            <constraint firstAttribute="bottom" secondItem="MEH-PQ-ioG" secondAttribute="bottom" constant="40" id="UlU-eY-qBo"/>
+                            <constraint firstAttribute="trailing" secondItem="MEH-PQ-ioG" secondAttribute="trailing" id="cWi-ai-lkO"/>
+                            <constraint firstItem="MEH-PQ-ioG" firstAttribute="leading" secondItem="U8m-B3-Z22" secondAttribute="leading" constant="-11" id="kCg-hq-ubp"/>
                             <constraint firstAttribute="bottom" secondItem="gL4-gC-dHw" secondAttribute="bottom" id="pVv-n4-zuf"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="gL4-gC-dHw"/>
+                                <exclude reference="MEH-PQ-ioG"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="HHi-4V-f91"/>
+                                <exclude reference="UlU-eY-qBo"/>
+                                <exclude reference="cWi-ai-lkO"/>
+                                <exclude reference="kCg-hq-ubp"/>
                                 <exclude reference="U9n-l3-Vnf"/>
                                 <exclude reference="pVv-n4-zuf"/>
                             </mask>
@@ -108,8 +123,13 @@
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="gL4-gC-dHw"/>
+                                <include reference="MEH-PQ-ioG"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="HHi-4V-f91"/>
+                                <include reference="UlU-eY-qBo"/>
+                                <include reference="cWi-ai-lkO"/>
+                                <include reference="kCg-hq-ubp"/>
                                 <include reference="U9n-l3-Vnf"/>
                                 <include reference="pVv-n4-zuf"/>
                             </mask>
@@ -117,6 +137,10 @@
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="pageControl" destination="gL4-gC-dHw" id="I3F-RA-T48"/>
+                        <outlet property="scrollView" destination="MEH-PQ-ioG" id="NEp-h6-Tvi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HYj-bm-Dts" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

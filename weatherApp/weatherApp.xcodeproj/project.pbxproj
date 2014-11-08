@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		410E672C1A0BA56E00BFE95F /* ZHMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 410E672B1A0BA56E00BFE95F /* ZHMainView.xib */; };
 		410E672F1A0BA6D100BFE95F /* ZHMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 410E672E1A0BA6D100BFE95F /* ZHMainView.m */; };
+		413C49331A0C7598003E9875 /* face.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 413C49321A0C7598003E9875 /* face.jpg */; };
 		4192E5C91A0B099600CF3253 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4192E5C81A0B099600CF3253 /* main.m */; };
 		4192E5CC1A0B099600CF3253 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4192E5CB1A0B099600CF3253 /* AppDelegate.m */; };
 		4192E5CF1A0B099600CF3253 /* weatherApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4192E5CD1A0B099600CF3253 /* weatherApp.xcdatamodeld */; };
@@ -34,6 +35,7 @@
 		410E672B1A0BA56E00BFE95F /* ZHMainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZHMainView.xib; sourceTree = "<group>"; };
 		410E672D1A0BA6D100BFE95F /* ZHMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHMainView.h; sourceTree = "<group>"; };
 		410E672E1A0BA6D100BFE95F /* ZHMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHMainView.m; sourceTree = "<group>"; };
+		413C49321A0C7598003E9875 /* face.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = face.jpg; sourceTree = "<group>"; };
 		4192E5C31A0B099600CF3253 /* weatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4192E5C71A0B099600CF3253 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4192E5C81A0B099600CF3253 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 		4192E5C51A0B099600CF3253 /* weatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				413C49321A0C7598003E9875 /* face.jpg */,
 				4192E5CA1A0B099600CF3253 /* AppDelegate.h */,
 				4192E5CB1A0B099600CF3253 /* AppDelegate.m */,
 				4192E5D01A0B099600CF3253 /* ViewController.h */,
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4192E5D51A0B099600CF3253 /* Main.storyboard in Resources */,
+				413C49331A0C7598003E9875 /* face.jpg in Resources */,
 				410E672C1A0BA56E00BFE95F /* ZHMainView.xib in Resources */,
 				4192E5DA1A0B099600CF3253 /* LaunchScreen.xib in Resources */,
 				4192E5D71A0B099600CF3253 /* Images.xcassets in Resources */,

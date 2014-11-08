@@ -14,5 +14,6 @@
 @property (strong, nonatomic) IBOutlet UILabel *weatherLabel;
 @property (strong, nonatomic) IBOutlet UILabel *tempLabel;
 
++(ZHMainView *)instanceView;
 
 @end
