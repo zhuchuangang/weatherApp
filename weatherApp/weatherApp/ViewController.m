@@ -38,7 +38,8 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    //[self.navigationController setNavigationBarHidden:YES animated:YES];
+    self.navigationItem.rightBarButtonItem=self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -80,7 +81,9 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if([segue.identifier isEqualToString:@"showWeather"]){
-        //ZHWeatherViewController *controller=segue.destinationViewController;
+        ZHWeatherViewController *controller=segue.destinationViewController;
+        NSIndexPath *indexPath=[_cityTableView indexPathForSelectedRow];
+        controller.currentPage=[indexPath row];
     }
 }
 

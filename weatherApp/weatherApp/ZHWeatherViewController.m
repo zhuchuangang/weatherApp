@@ -15,6 +15,8 @@
 
 @implementation ZHWeatherViewController
 
+@synthesize currentPage;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -34,7 +36,7 @@
     [_scrollView setBackgroundColor:colorRGB];
 
     ZHMainView *view1=[ZHMainView instanceView];
-    view1.cityLabel.text=@"上海";
+    view1.cityLabel.text=@"芜湖";
     view1.weatherLabel.text=@"晴转多云";
     view1.tempLabel.text=@"19";
     view1.frame=CGRectMake(0, 0, width, height);
@@ -46,8 +48,8 @@
     view2.frame=CGRectMake(width, 0, width, height);
 
     ZHMainView *view3=[ZHMainView instanceView];
-    view3.cityLabel.text=@"芜湖";
-    view3.weatherLabel.text=@"小雪";
+    view3.cityLabel.text=@"上海";
+    view3.weatherLabel.text=@"大雨";
     view3.tempLabel.text=@"15";
     view3.frame=CGRectMake(width*2, 0, width, height);
     
@@ -61,7 +63,15 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
+    //[self.navigationController setNavigationBarHidden:NO animated:YES];
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    _pageControl.currentPage=currentPage;
+    //[_pageControl sendActionsForControlEvents:UIControlEventValueChanged];
+    CGRect size=self.view.frame;
+    [_scrollView setContentOffset:CGPointMake(currentPage*size.size.width, 0)];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -85,7 +95,6 @@
     [_scrollView setContentOffset:CGPointMake(pageControl.currentPage*size.size.width, 0)];
     }];
 }
-
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {

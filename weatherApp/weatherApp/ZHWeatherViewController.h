@@ -10,6 +10,7 @@
 
 @interface ZHWeatherViewController : UIViewController<UIScrollViewDelegate>
 
+@property (nonatomic) NSInteger currentPage;
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (strong, nonatomic) IBOutlet UIPageControl *pageControl;
 - (IBAction)valueChanged:(id)sender;
